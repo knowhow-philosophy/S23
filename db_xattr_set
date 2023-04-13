@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#   see db_xattr_get
+
+#   chmod +x db_xattr_set
+#   ./db_xattr_set
+
+mkdir -p .idea
+xattr -w com.dropbox.ignored 1 .idea
+
+mkdir -p .git
+xattr -w com.dropbox.ignored 1 .git
+
+mkdir -p .cache
+xattr -w com.dropbox.ignored 1 .cache
+
+mkdir -p .parcel-cache
+xattr -w com.dropbox.ignored 1 .parcel-cache
+
+mkdir -p dist
+xattr -w com.dropbox.ignored 1 dist
+
+mkdir -p build
+xattr -w com.dropbox.ignored 1 build
+
+mkdir -p node_modules
+xattr -w com.dropbox.ignored 1 node_modules

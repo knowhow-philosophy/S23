@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#   see db_xattr_get
+
+#   chmod +x db_xattr_empty
+#   ./db_xattr_empty
+
+rm -rf .cache/*
+rm -rf .parcel-cache/*
+rm -rf dist/*
+rm -rf build/*
+rm -rf node_modules/*
